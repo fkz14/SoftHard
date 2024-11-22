@@ -13,82 +13,6 @@ body {
   background-color: #292c3e;
 }
 
-/* Estilos para los grid padre */
-.grid_padre {
-  display: grid;
-  grid-template-areas: "header header header" "main main main" "footer footer footer";
-  grid-template-columns: repeat(3, 1fr);
-  /*Estilos para el header index*/
-}
-
-/* Estilo para el header index */
-.grid_padre .grid_header_index {
-  grid-area: header;
-  padding: 20px;
-  /* Estilos para el h1*/
-}
-
-/* Estilo para el h1 del index */
-.grid_padre .grid_header_index h1 {
-  font-size: 50px;
-  padding: 0;
-  margin: 0;
-}
-
-/* Declaracion grid-area para main */
-.grid_main {
-  grid-area: main;
-}
-
-/* Declaracion grid-area para nav */
-.grid_nav {
-  grid-area: nav;
-  display: flex;
-  align-items: center;
-}
-
-/* Estilo para los ul de nav */
-.grid_nav ul {
-  margin: 0;
-}
-
-/* Declaracion grid-area para footer */
-.grid_footer {
-  grid-area: footer;
-}
-
-/* Estilos para el grid padre de secciones */
-.grid_padre_secciones {
-  display: grid;
-  grid-template-areas: "menu  header next" "main main main" "footer footer footer";
-  grid-template-columns: repeat(3, 1fr);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-/* Estilos para el header de secciones */
-.grid_padre_secciones .grid_header_secciones {
-  grid-area: header;
-  width: 100%;
-}
-
-/* Estilos para el nav de redireccion al menu de secciones */
-.grid_padre_secciones .grid_nav_menu_secciones {
-  grid-area: menu;
-}
-
-/* Estilos para el nav de siguiente pagina de secciones */
-.grid_padre_secciones .grid_nav_next_secciones {
-  grid-area: next;
-}
-
-/* Estilos para le footer de secciones */
-.grid_padre_secciones .grid_footer {
-  width: 100%;
-}
-
 /* Estilos para el header */
 header {
   background-color: rgb(56, 65, 85);
@@ -143,6 +67,114 @@ a:visited {
   color: black;
 }
 
+/* Estilo para el iframe */
+iframe {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  height: 200px;
+  border: 0;
+}
+
+/* Estilos para el grid padre */
+.grid_padre {
+  display: grid;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  grid-template-columns: repeat(3, 1fr);
+  /*Estilos para el header index*/
+}
+
+/* Estilo para el header index */
+.grid_padre .grid_header_index {
+  grid-area: header;
+  padding: 20px;
+  /* Estilos para el h1*/
+}
+
+/* Estilo para el h1 del index */
+.grid_padre .grid_header_index h1 {
+  font-size: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Declaracion grid-area para main */
+.grid_main {
+  grid-area: main;
+}
+
+/* Declaracion grid-area para nav y estilos */
+.grid_nav {
+  grid-area: nav;
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo para los ul de nav */
+.grid_nav ul {
+  margin: 0;
+}
+
+/* Declaracion grid-area para footer y estilos */
+.grid_footer {
+  grid-area: footer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 90px;
+  background-color: rgb(56, 65, 85);
+  flex-direction: column;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+  color: white;
+  padding-bottom: 20px;
+}
+
+/* Estilos para los p de grid_footer */
+.grid_footer p {
+  margin: 10px 200px;
+  padding: 0px;
+  background-color: transparent;
+}
+
+/* Estilos para los ul de nav de grid_footer */
+.grid_footer nav ul {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+}
+
+/* Estilos para el grid padre de secciones */
+.grid_padre_secciones {
+  display: grid;
+  grid-template-areas: "menu  header next" "main main main" "footer footer footer";
+  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Estilos para el header de secciones */
+.grid_padre_secciones .grid_header_secciones {
+  grid-area: header;
+  width: 100%;
+  height: 90px;
+}
+
+/* Declaracion de grid para el nav_menu */
+.grid_padre_secciones .grid_nav_menu_secciones {
+  grid-area: menu;
+}
+
+/* Declaracion de grid para el nav_next */
+.grid_padre_secciones .grid_nav_next_secciones {
+  grid-area: next;
+}
+
 /* Estilos para los botones de rediccionador home y siguiente */
 .botones_de_navegacion {
   background-color: #d3e56c;
@@ -161,25 +193,6 @@ a:visited {
   background-color: rgb(56 65 85);
 }
 
-/* Estilo para el footer */
-footer {
-  display: flex;
-  align-items: center;
-  height: 80px;
-  background-color: rgb(56, 65, 85);
-  flex-direction: column;
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 20px;
-  color: white;
-}
-
-/* Estilos para los p de footer */
-footer p {
-  margin: auto auto;
-  padding: 0px;
-  background-color: transparent;
-}
-
 /* Estilo para la imagen index */
 .imagen_index {
   display: block;
@@ -190,7 +203,7 @@ footer p {
 }
 
 /* Estilos para el img e iframe */
-.img_y_iframe {
+.img_e_iframe {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -214,17 +227,6 @@ footer p {
   width: 100%;
   max-width: 100%;
   border-radius: 10px;
-}
-
-/* Estilo para el iframe */
-iframe {
-  display: block;
-  margin: 20px auto;
-  border-radius: 10px;
-  width: 90%;
-  max-width: 500px;
-  height: 200px;
-  border: 0;
 }
 
 /* Estilos para el contenedor iframe y p */
@@ -251,16 +253,13 @@ iframe {
 
   /* Estilos para el grid padre */
   .grid_padre {
+    display: grid;
     grid-template-areas:
       "header"
       "nav"
       "main"
       "footer";
     grid-template-columns: 1fr;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
   }
 
   /* Estilos para el header de index */
@@ -289,9 +288,15 @@ iframe {
     width: 100vw;
   }
 
+  /* Estilos para el main con flex */
+  .grid_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   /* Estilos para las secciones del main */
   .grid_main section {
-    display: flex;
     flex-direction: column;
   }
 
@@ -309,9 +314,19 @@ iframe {
   .grid_footer {
     grid-area: footer;
     width: 100vw;
-    height: 15vh;
+    height: 20vh;
     background-color: rgb(56, 65, 85);
     text-align: center;
+    padding: 15px;
+    gap: 20px;
+  }
+
+  /* Estilos para los p de footer */
+  .grid_footer p {
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+    background-color: transparent;
   }
 
   /* Estilos para el grid padre de las secciones */
@@ -322,17 +337,14 @@ iframe {
       "main"
       "footer";
     grid-template-columns: 1fr;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
   }
 
-  /* Estilos para el header de las secciones */
-  .grid_padre_secciones .grid_header_secciones {
+  /* Estilos flex para el padre grid de las secciones */
+  .grid_padre_secciones {
     display: flex;
-    justify-content: space-around;
-    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
   }
 
   /* Estilos para el h1 de las secciones */
@@ -342,30 +354,27 @@ iframe {
 
   /* Estilos para el boton nav de redireccion al menu de las secciones */
   .grid_padre_secciones .grid_nav_menu_secciones {
-    grid-area: nav_izquierdo;
     display: flex;
-    justify-content: center;
     margin-left: 20px;
   }
 
   /* Estilos para el boton next de las secciones */
   .grid_padre_secciones .grid_nav_next_secciones {
-    grid-area: nav_derecho;
     display: flex;
-    justify-content: center;
     margin-right: 20px;
   }
 
   /* Estilos para los p */
   .p_infos {
     padding: 10px;
-    width: 350px;
+    width: 100vw;
     margin: 20px auto;
     border-radius: 20px;
     font-family: "Nunito Sans", sans-serif;
     font-size: 20px;
     color: white;
     background-color: rgb(56 65 85);
+    max-width: 330px;
   }
 
   /* Estilos para los botones de navegacion */
@@ -375,13 +384,13 @@ iframe {
     text-align: center;
   }
 
+  /* Estilos el contenedor img e iframe */
+  .img_e_iframe {
+    max-width: 330px;
+  }
+
   /* Estilo para la galeria de imagenes */
   .galeria_img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin: 20px auto;
     max-width: 350px;
     width: 100%;
   }
@@ -395,7 +404,6 @@ iframe {
 
   /* Estilo para el iframe */
   iframe {
-    display: block;
     margin: 20px auto;
     border-radius: 10px;
     width: 100%;
@@ -406,8 +414,6 @@ iframe {
 
   /* Estilos para el contenedor iframe y p */
   .iframe_y_p {
-    display: flex;
-    flex-direction: column;
     width: 100%;
     max-width: 350px;
     background-color: rgb(56, 65, 85);
@@ -415,5 +421,6 @@ iframe {
     height: auto;
     margin-bottom: 20px;
   }
+
 
 }
