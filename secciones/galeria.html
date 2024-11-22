@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoftHard - Galeria</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    /> <!-- LInk de bootstrap-->
+    <link rel="stylesheet" href="../style.css" />
+    <!-- Enlazamos con nuestra hoja de estilo -->
+  </head>
+
+  <body>
+    <div class="grid_padre_secciones"> <!-- Contenedor grid padre -->
+      <header class="grid_header_secciones"> <!-- Contenedor header -->
+        <nav class="grid_nav_menu_secciones"> <!-- Contenedor de botones-->
+          <a
+            href="../index.html"
+            class="botones_de_navegacion"
+            aria-label="Volver a la pagina principal"
+            >← Volver al menu</a
+          >
+          <!-- Boton rediccionador al home -->
+        </nav>
+        <h1 id="quienes_somos">Galeria</h1>
+        <nav class="grid_nav_next_secciones">
+          <a
+            href="./contacto.html"
+            class="botones_de_navegacion"
+            aria-label="Siguiente pagina"
+          >
+            Siguiente pagina →</a
+          >
+          <!-- Boton siguiente pagina -->
+        </nav>
+      </header>
+      <main class="grid_main"> <!-- Contenedor main -->  
+        <section class="p_infos"> <!-- Parrafo central de la web -->
+          <p>
+            En esta seccion hallaras el lugar donde nos ubicamos y imagenes de
+            donde estamos ubicados.
+          </p>
+        </section>
+        <section class="img_y_iframe"> <!-- Contenedor img y iframe-->
+          <section class="galeria_img"> <!-- Contenedor img -->
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://c1.wallpaperflare.com/preview/225/381/81/buenos-aires-puerto-madero-buildings-argentina.jpg"
+                    class="d-block w-100"
+                    alt="Imagen de ubicacion del negocio"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://c1.wallpaperflare.com/preview/434/683/601/puerto-madero-buenos-aires-argentina-the-bridge-of-the-woman.jpg"
+                    class="d-block w-100"
+                    alt="Segunda imagen de ubicacion del negocio"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </section>
+          <section class="iframe_y_p"> <!-- Contenedor iframe y p -->
+            <p class="p_infos">Ubicacion</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26269.006653787925!2d-58.3728685109663!3d-34.613621918802735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d9c2d70389%3A0xe7b5e9ee316678f!2sPuerto%20Madero%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1728516016597!5m2!1ses-419!2sar"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </section>
+        </section>
+      </main>
+      <footer class="grid_footer">
+        <!-- Pie de pagina -->
+        <p>© 2024 SoftHard. Todos los derechos reservados.</p>
+        <p>
+          <a href="./contacto.html">Contacto</a> |
+          <a href="#galeria">Volver arriba</a>
+        </p>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script> <!-- Script de bootstrap-->
+  </body>
+</html>
