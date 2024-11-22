@@ -105,6 +105,11 @@ h1 {
   color: white;
 }
 
+/* Estilos para los h2 */
+h2 {
+  font-weight: bold;
+}
+
 /* Estilos para los ul de nav */
 nav ul {
   display: flex;
@@ -362,7 +367,7 @@ iframe {
     color: white;
     background-color: rgb(56 65 85);
   }
-  
+
   /* Estilos para los botones de navegacion */
   .botones_de_navegacion {
     background-color: #d3e56c;
