@@ -193,6 +193,11 @@ iframe {
   background-color: rgb(56 65 85);
 }
 
+/* Estilos para que los p no sobresalgan */
+.p_infos p {
+  max-width: 100%;
+}
+
 /* Estilo para la imagen index */
 .imagen_index {
   display: block;
