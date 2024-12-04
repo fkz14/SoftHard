@@ -1,6 +1,5 @@
 /* Exportamos las fuentes a utilizar */
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
-
 /* Estilo generales */
 * {
   margin: 0;
@@ -190,7 +189,7 @@ iframe {
   font-family: "Nunito Sans", sans-serif;
   font-size: 20px;
   color: white;
-  background-color: rgb(56 65 85);
+  background-color: rgb(56, 65, 85);
 }
 
 /* Estilos para que los p no sobresalgan */
@@ -255,66 +254,52 @@ iframe {
 
 /* Media query mobile */
 @media (max-width: 768px) {
-
   /* Estilos para el grid padre */
   .grid_padre {
     display: grid;
-    grid-template-areas:
-      "header"
-      "nav"
-      "main"
-      "footer";
+    grid-template-areas: "header" "nav" "main" "footer";
     grid-template-columns: 1fr;
   }
-
   /* Estilos para el header de index */
   .grid_padre .grid_header_index {
     grid-area: header;
     width: 100vw;
     flex-direction: column;
   }
-
   /* Estilos para el grid nav */
   .grid_nav {
     grid-area: nav;
     width: 100vw;
   }
-
   /* Estilos para los ul de nav */
   .grid_nav ul {
     flex-wrap: wrap;
     gap: 15px;
     justify-content: space-around;
   }
-
   /* Estilos para el main */
   .grid_main {
     grid-area: main;
     width: 100vw;
   }
-
   /* Estilos para el main con flex */
   .grid_main {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   /* Estilos para las secciones del main */
   .grid_main section {
     flex-direction: column;
   }
-
   /* Estilos para los p de las secciones */
   .grid_main section p {
     width: 80vw;
   }
-
   /* Estilos para las img de las secciones */
   .grid_main section img {
     width: 90vw;
   }
-
   /* Estilos para el footer */
   .grid_footer {
     grid-area: footer;
@@ -325,7 +310,6 @@ iframe {
     padding: 15px;
     gap: 20px;
   }
-
   /* Estilos para los p de footer */
   .grid_footer p {
     width: 100%;
@@ -333,17 +317,12 @@ iframe {
     padding: 0px;
     background-color: transparent;
   }
-
   /* Estilos para el grid padre de las secciones */
   .grid_padre_secciones {
     display: grid;
-    grid-template-areas:
-      "nav_izquierdo header nav_derecho"
-      "main"
-      "footer";
+    grid-template-areas: "nav_izquierdo header nav_derecho" "main" "footer";
     grid-template-columns: 1fr;
   }
-
   /* Estilos flex para el padre grid de las secciones */
   .grid_padre_secciones {
     display: flex;
@@ -351,24 +330,20 @@ iframe {
     align-items: center;
     flex-direction: column;
   }
-
   /* Estilos para el h1 de las secciones */
   .grid_padre_secciones .grid_header_secciones h1 {
     text-align: center;
   }
-
   /* Estilos para el boton nav de redireccion al menu de las secciones */
   .grid_padre_secciones .grid_nav_menu_secciones {
     display: flex;
     margin-left: 20px;
   }
-
   /* Estilos para el boton next de las secciones */
   .grid_padre_secciones .grid_nav_next_secciones {
     display: flex;
     margin-right: 20px;
   }
-
   /* Estilos para los p */
   .p_infos {
     padding: 10px;
@@ -378,35 +353,30 @@ iframe {
     font-family: "Nunito Sans", sans-serif;
     font-size: 20px;
     color: white;
-    background-color: rgb(56 65 85);
+    background-color: rgb(56, 65, 85);
     max-width: 330px;
   }
-
   /* Estilos para los botones de navegacion */
   .botones_de_navegacion {
     background-color: #d3e56c;
     padding: 5px;
     text-align: center;
   }
-
   /* Estilos el contenedor img e iframe */
   .img_e_iframe {
     max-width: 330px;
   }
-
   /* Estilo para la galeria de imagenes */
   .galeria_img {
     max-width: 350px;
     width: 100%;
   }
-
   /* Estilos para las img de la galeria */
   .galeria_img img {
     width: 100%;
     max-width: 100%;
     border-radius: 10px;
   }
-
   /* Estilo para el iframe */
   iframe {
     margin: 20px auto;
@@ -416,7 +386,6 @@ iframe {
     height: 150px;
     border: 0;
   }
-
   /* Estilos para el contenedor iframe y p */
   .iframe_y_p {
     width: 100%;
@@ -426,6 +395,6 @@ iframe {
     height: auto;
     margin-bottom: 20px;
   }
-
-
 }
+
+/*# sourceMappingURL=style.css.map */

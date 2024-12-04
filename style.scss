@@ -1,0 +1,430 @@
+/* Exportamos las fuentes a utilizar */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+/* Estilo generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo de color para fondo de la pagina */
+body {
+    background-color: #292c3e;
+}
+
+/* Estilos para el header */
+header {
+    background-color: rgb(56, 65, 85);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Estilos para los h1 */
+h1 {
+    padding: 20px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-decoration: underline;
+    color: white;
+}
+
+/* Estilos para los h2 */
+h2 {
+    font-weight: bold;
+}
+
+/* Estilos para los ul de nav */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    width: 700px;
+    list-style: none;
+}
+
+/* Estilos para los a de nav */
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #d3e56c;
+    border-radius: 4px;
+    padding: 3px;
+}
+
+/* Estilos para los a */
+a {
+    text-decoration: none;
+    font-family: "Nunito Sans", sans-serif;
+    background-color: #d3e56c;
+    border-radius: 4px;
+    padding: 3px;
+}
+
+/* Estilos para los a dependiendo de su funcion */
+a:link,
+a:visited {
+    color: black;
+}
+
+/* Estilo para el iframe */
+iframe {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    height: 200px;
+    border: 0;
+}
+
+/* Estilos para el grid padre */
+.grid_padre {
+    display: grid;
+    grid-template-areas: "header header header" "main main main" "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    /*Estilos para el header index*/
+    
+}
+
+/* Estilo para el header index */
+.grid_padre .grid_header_index {
+    grid-area: header;
+    padding: 20px;
+    /* Estilos para el h1*/
+}
+
+/* Estilo para el h1 del index */
+.grid_padre .grid_header_index h1 {
+    font-size: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Declaracion grid-area para main */
+.grid_main {
+    grid-area: main;
+}
+
+/* Declaracion grid-area para nav y estilos */
+.grid_nav {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para los ul de nav */
+.grid_nav ul {
+    margin: 0;
+}
+
+/* Declaracion grid-area para footer y estilos */
+.grid_footer {
+    grid-area: footer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    background-color: rgb(56, 65, 85);
+    flex-direction: column;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    color: white;
+    padding-bottom: 20px;
+}
+
+/* Estilos para los p de grid_footer */
+.grid_footer p {
+    margin: 10px 200px;
+    padding: 0px;
+    background-color: transparent;
+}
+
+/* Estilos para los ul de nav de grid_footer */
+.grid_footer nav ul {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}
+
+/* Estilos para el grid padre de secciones */
+.grid_padre_secciones {
+    display: grid;
+    grid-template-areas: "menu  header next" "main main main" "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Estilos para el header de secciones */
+.grid_padre_secciones .grid_header_secciones {
+    grid-area: header;
+    width: 100%;
+    height: 90px;
+}
+
+/* Declaracion de grid para el nav_menu */
+.grid_padre_secciones .grid_nav_menu_secciones {
+    grid-area: menu;
+}
+
+/* Declaracion de grid para el nav_next */
+.grid_padre_secciones .grid_nav_next_secciones {
+    grid-area: next;
+}
+
+/* Estilos para los botones de rediccionador home y siguiente */
+.botones_de_navegacion {
+    background-color: #d3e56c;
+    padding: 10px;
+}
+
+/* Estilos para los p */
+.p_infos {
+    padding: 20px;
+    width: 700px;
+    margin: 20px auto;
+    border-radius: 20px;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(56 65 85);
+}
+
+/* Estilos para que los p no sobresalgan */
+.p_infos p {
+    max-width: 100%;
+}
+
+/* Estilo para la imagen index */
+.imagen_index {
+    display: block;
+    width: 900px;
+    height: auto;
+    border-radius: 30px;
+    margin: 20px auto;
+}
+
+/* Estilos para el img e iframe */
+.img_e_iframe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Estilo para la galeria de imagenes */
+.galeria_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Estilos para las img de galeria */
+.galeria_img img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Estilos para el contenedor iframe y p */
+.iframe_y_p {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    background-color: rgb(56, 65, 85);
+    border-radius: 20px;
+    height: auto;
+}
+
+/* Estilos para el p del contenedor iframe y p */
+.iframe_y_p .p_infos {
+    text-align: center;
+    max-width: 300px;
+    padding: 0;
+    font-size: 30px;
+}
+
+/* Media query mobile */
+@media (max-width: 768px) {
+
+    /* Estilos para el grid padre */
+    .grid_padre {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+
+    /* Estilos para el header de index */
+    .grid_padre .grid_header_index {
+        grid-area: header;
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    /* Estilos para el grid nav */
+    .grid_nav {
+        grid-area: nav;
+        width: 100vw;
+    }
+
+    /* Estilos para los ul de nav */
+    .grid_nav ul {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: space-around;
+    }
+
+    /* Estilos para el main */
+    .grid_main {
+        grid-area: main;
+        width: 100vw;
+    }
+
+    /* Estilos para el main con flex */
+    .grid_main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Estilos para las secciones del main */
+    .grid_main section {
+        flex-direction: column;
+    }
+
+    /* Estilos para los p de las secciones */
+    .grid_main section p {
+        width: 80vw;
+    }
+
+    /* Estilos para las img de las secciones */
+    .grid_main section img {
+        width: 90vw;
+    }
+
+    /* Estilos para el footer */
+    .grid_footer {
+        grid-area: footer;
+        width: 100vw;
+        height: 20vh;
+        background-color: rgb(56, 65, 85);
+        text-align: center;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    /* Estilos para los p de footer */
+    .grid_footer p {
+        width: 100%;
+        margin: 0;
+        padding: 0px;
+        background-color: transparent;
+    }
+
+    /* Estilos para el grid padre de las secciones */
+    .grid_padre_secciones {
+        display: grid;
+        grid-template-areas:
+            "nav_izquierdo header nav_derecho"
+            "main"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+
+    /* Estilos flex para el padre grid de las secciones */
+    .grid_padre_secciones {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* Estilos para el h1 de las secciones */
+    .grid_padre_secciones .grid_header_secciones h1 {
+        text-align: center;
+    }
+
+    /* Estilos para el boton nav de redireccion al menu de las secciones */
+    .grid_padre_secciones .grid_nav_menu_secciones {
+        display: flex;
+        margin-left: 20px;
+    }
+
+    /* Estilos para el boton next de las secciones */
+    .grid_padre_secciones .grid_nav_next_secciones {
+        display: flex;
+        margin-right: 20px;
+    }
+
+    /* Estilos para los p */
+    .p_infos {
+        padding: 10px;
+        width: 100vw;
+        margin: 20px auto;
+        border-radius: 20px;
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 20px;
+        color: white;
+        background-color: rgb(56 65 85);
+        max-width: 330px;
+    }
+
+    /* Estilos para los botones de navegacion */
+    .botones_de_navegacion {
+        background-color: #d3e56c;
+        padding: 5px;
+        text-align: center;
+    }
+
+    /* Estilos el contenedor img e iframe */
+    .img_e_iframe {
+        max-width: 330px;
+    }
+
+    /* Estilo para la galeria de imagenes */
+    .galeria_img {
+        max-width: 350px;
+        width: 100%;
+    }
+
+    /* Estilos para las img de la galeria */
+    .galeria_img img {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    /* Estilo para el iframe */
+    iframe {
+        margin: 20px auto;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 300px;
+        height: 150px;
+        border: 0;
+    }
+
+    /* Estilos para el contenedor iframe y p */
+    .iframe_y_p {
+        width: 100%;
+        max-width: 350px;
+        background-color: rgb(56, 65, 85);
+        border-radius: 20px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
