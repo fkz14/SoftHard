@@ -279,6 +279,7 @@ iframe {
         grid-area: nav;
         width: 100vw;
         /* Estilos para los ul de nav */
+        justify-content: center;
         ul {
             flex-wrap: wrap;
             gap: 15px;
