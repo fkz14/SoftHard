@@ -1,0 +1,13 @@
+$color_primario: #292c3e;
+$color_secundario: rgb(56, 65, 85);
+$color_terciario: #d3e56c;
+
+@mixin display($tipo, $alineacion_horizontal: null, $alineacion_vertical: null){
+    display: $tipo;
+    @if $alineacion_horizontal != null {
+        justify-content: $alineacion_horizontal;
+    }
+    @if $alineacion_vertical != null {
+        align-items: $alineacion_vertical;
+    }
+}

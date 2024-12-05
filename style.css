@@ -37,6 +37,7 @@ h2 {
 nav ul {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 20px;
   width: 700px;
   list-style: none;
@@ -197,10 +198,10 @@ iframe {
 /* Estilos para el img e iframe */
 .img_e_iframe {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  gap: 20px;
   align-items: center;
+  flex-direction: row;
+  gap: 20px;
 }
 
 /* Estilo para la galeria de imagenes */
@@ -272,8 +273,8 @@ iframe {
   /* Estilos para el main con flex */
   .grid_main {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
   /* Estilos para las secciones del main */
   .grid_main section {
@@ -390,8 +391,8 @@ iframe {
   .grid_padre {
     height: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    flex-direction: column;
   }
   .imagen_index {
     margin-top: 50px;
