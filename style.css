@@ -419,6 +419,7 @@ iframe {
   .img_e_iframe .galeria_img {
     max-width: 90vw;
   }
+  /* Estilos para el grid footer*/
   .grid_footer {
     height: 11vh;
   }
