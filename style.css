@@ -193,13 +193,16 @@ iframe {
   max-width: 100%;
 }
 
+/* Estilos para el carrusel del index */
+.carrusel {
+  width: 60vw;
+}
+
 /* Estilo para la imagen index */
 .imagen_index {
-  display: block;
-  width: 900px;
+  max-width: 100%;
   height: auto;
-  border-radius: 30px;
-  margin: 20px auto;
+  margin: auto auto 20px auto;
 }
 
 /* Estilos para el img e iframe */
@@ -281,20 +284,24 @@ iframe {
   /* Estilos para el main con flex */
   .grid_main {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
   }
   /* Estilos para las secciones del main */
   .grid_main section {
-    flex-direction: column;
     /* Estilos para los p de las secciones */
-    /* Estilos para las img de las secciones */
+    /*Estilos para la imagen del index*/
+    /* Estilos para el carrusel del index */
   }
   .grid_main section p {
     width: 80vw;
   }
-  .grid_main section img {
-    width: 90vw;
+  .grid_main section .imagen_index {
+    max-width: 100%;
+  }
+  .grid_main section .carrusel {
+    width: 90%;
   }
   /* Estilos para el footer */
   .grid_footer {
@@ -409,7 +416,7 @@ iframe {
   /*Estilos para la imagen del index*/
   .imagen_index {
     margin-top: 50px;
-    max-width: 90%;
+    max-width: 100%;
   }
   /*Estilos para el img e iframe*/
   .img_e_iframe {
@@ -422,6 +429,10 @@ iframe {
   /* Estilos para el grid footer*/
   .grid_footer {
     height: 11vh;
+  }
+  /* Estilos para el carrusel del index */
+  .carrusel {
+    width: 90%;
   }
   /*Estilos para el p de grid footer y propio grid footer del grid padre secciones */
   .grid_padre_secciones .grid_footer {
