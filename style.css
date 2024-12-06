@@ -98,6 +98,10 @@ iframe {
   grid-area: main;
 }
 
+.accordion-button h2 {
+  font-size: 20px;
+}
+
 /* Declaracion grid-area para nav y estilos */
 .grid_nav {
   grid-area: nav;
@@ -141,27 +145,28 @@ iframe {
   display: grid;
   grid-template-areas: "menu  header next" "main main main" "footer footer footer";
   grid-template-columns: repeat(3, 1fr);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
   height: 100vh;
   /* Estilos para el header de secciones */
+  /* Declaracion de grid para el nav_menu */
+  /* Declaracion de grid para el nav_next */
 }
 .grid_padre_secciones .grid_header_secciones {
   grid-area: header;
   width: 100%;
   height: 90px;
 }
-
-/* Declaracion de grid para el nav_menu */
 .grid_padre_secciones .grid_nav_menu_secciones {
   grid-area: menu;
 }
-
-/* Declaracion de grid para el nav_next */
 .grid_padre_secciones .grid_nav_next_secciones {
   grid-area: next;
+}
+
+.grid_padre_secciones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* Estilos para los botones de rediccionador home y siguiente */
@@ -202,10 +207,9 @@ iframe {
   align-items: center;
   flex-direction: row;
   gap: 20px;
+  /* Estilo para la galeria de imagenes */
 }
-
-/* Estilo para la galeria de imagenes */
-.galeria_img {
+.img_e_iframe .galeria_img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -215,7 +219,7 @@ iframe {
   width: 100%;
   /* Estilos para las img de galeria */
 }
-.galeria_img img {
+.img_e_iframe .galeria_img img {
   width: 100%;
   max-width: 100%;
   border-radius: 10px;
@@ -257,6 +261,8 @@ iframe {
   .grid_nav {
     grid-area: nav;
     width: 100vw;
+  }
+  .grid_nav {
     /* Estilos para los ul de nav */
     justify-content: center;
   }
@@ -353,26 +359,17 @@ iframe {
   /* Estilos el contenedor img e iframe */
   .img_e_iframe {
     max-width: 330px;
+    /* Estilo para la galeria de imagenes */
   }
-  /* Estilo para la galeria de imagenes */
-  .galeria_img {
+  .img_e_iframe .galeria_img {
     max-width: 350px;
     width: 100%;
     /* Estilos para las img de la galeria */
   }
-  .galeria_img img {
+  .img_e_iframe .galeria_img img {
     width: 100%;
     max-width: 100%;
     border-radius: 10px;
-  }
-  /* Estilo para el iframe */
-  iframe {
-    margin: 20px auto;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 300px;
-    height: 150px;
-    border: 0;
   }
   /* Estilos para el contenedor iframe y p */
   .iframe_y_p {
@@ -382,22 +379,37 @@ iframe {
     border-radius: 20px;
     height: auto;
     margin-bottom: 20px;
+    /* Estilo para el iframe */
+  }
+  .iframe_y_p iframe {
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    height: 150px;
+    border: 0;
   }
 }
+/* Media query tablet */
 @media (max-width: 1024px) and (min-width: 768px) {
-  html, body {
+  /*Estilos para el html y body*/
+  html,
+  body {
     height: 100%;
   }
+  /*Estilos para el grid padre*/
   .grid_padre {
     height: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
   }
+  /*Estilos para la imagen del index*/
   .imagen_index {
     margin-top: 50px;
     max-width: 90%;
   }
+  /*Estilos para el img e iframe*/
   .img_e_iframe {
     flex-direction: column;
     margin-bottom: 20px;
@@ -405,9 +417,7 @@ iframe {
   .img_e_iframe .galeria_img {
     max-width: 90vw;
   }
-  .grid_footer {
-    height: 11vh;
-  }
+  /*Estilos para el p de grid footer y propio grid footer del grid padre secciones */
   .grid_padre_secciones .grid_footer {
     height: 13vh;
     padding-bottom: 30px;
