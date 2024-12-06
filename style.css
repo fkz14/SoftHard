@@ -94,10 +94,12 @@ iframe {
   margin: 0;
 }
 
+/* Declaracion de grid area para main */
 .grid_main {
   grid-area: main;
 }
 
+/* Ajuste de texto en los accordion */
 .accordion-button h2 {
   font-size: 20px;
 }
