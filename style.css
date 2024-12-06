@@ -367,6 +367,8 @@ iframe {
   }
   /* Estilos el contenedor img e iframe */
   .img_e_iframe {
+    display: flex;
+    flex-direction: column;
     max-width: 330px;
     /* Estilo para la galeria de imagenes */
   }
