@@ -10,6 +10,9 @@
 - **Galeria**: Imagen donde se ubica nuestra empresa junto la ubicacion.
 - **Contacto**: Formulario interactivo para que los usuarios puedan enviarnos sus consultas o solicitudes.
 
+### 🌟 **Diseño responsivo**  
+La página está diseñada para adaptarse perfectamente a cualquier dispositivo, garantizando una experiencia de usuario fluida en **móviles, tablets y escritorio**.
+
 ## Tecnologías utilizadas 🛠️
 
 - **HTML5**: Para la estructura del contenido.
