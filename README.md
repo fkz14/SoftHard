@@ -1,7 +1,7 @@
 # SoftHard 🌐
 
 **SoftHard** es una página web diseñada para ofrecer servicios integrales de desarrollo de software, mantenimiento de hardware y consultoría tecnológica. Nuestra misión es ayudar a las empresas a transformar sus ideas en soluciones digitales innovadoras.
-Puedes ver el sitio web en fastidious-belekoy-d15545.netlify.app.
+Puedes ver el sitio web en [SoftHard](https://fastidious-belekoy-d15545.netlify.app).
 
 ## Características principales 🚀
 
