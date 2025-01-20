@@ -20,5 +20,4 @@ La página está diseñada para adaptarse perfectamente a cualquier dispositivo,
 - **HTML5**: Para la estructura del contenido.
 - **CSS3 y Sass**: Para estilos personalizados y diseño responsivo.
 - **Bootstrap 5.3**: Framework para un diseño atractivo y funcional.
-- **JavaScript**: Para la interacción y funcionalidades dinámicas.
-- **Git**: Para el control de versiones y desarrollo del proyecto.
+- **Git/Github**: Para el control de versiones y desarrollo del proyecto.
